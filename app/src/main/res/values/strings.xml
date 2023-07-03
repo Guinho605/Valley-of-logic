@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Valley of logic</string>
+    <string name="Txt2">Digite sua idade</string>
+    <string name="Idades"> Diga sua idade</string>
+    <string name="Iniciar"> Inicie sua jornada</string>
+    <string name="Continuar"> Continue sua jornada</string>
+    <string-array name="Idade">
+        <item></item>
+        <item>04 anos</item>
+        <item>05 anos</item>
+        <item>06 anos</item>
+        <item>07 anos</item>
+        <item>08 anos</item>
+        <item>09 anos</item>
+        <item>10+ anos</item>
+    </string-array>
+</resources>
