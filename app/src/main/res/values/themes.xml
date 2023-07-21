@@ -13,4 +13,9 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Progressbar">
+        <item name="colorSecondary">#1C1C1C</item>
+    </style>
+
 </resources>
