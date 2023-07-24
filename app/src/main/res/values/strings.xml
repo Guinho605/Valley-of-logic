@@ -2,8 +2,8 @@
     <string name="app_name">Valley of logic</string>
     <string name="Txt2">Digite sua idade</string>
     <string name="Idades"> Diga sua idade</string>
-    <string name="Iniciar"> Inicie sua jornada</string>
-    <string name="Continuar"> Continue sua jornada</string>
+    <string name="Iniciar"> Cadastro</string>
+    <string name="Continuar"> Login</string>
     <string-array name="Idade">
         <item></item>
         <item>04 anos</item>
