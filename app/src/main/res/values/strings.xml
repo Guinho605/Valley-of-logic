@@ -6,6 +6,7 @@
     <string name="Login"> Login</string>
     <string-array name="Idade">
         <item></item>
+        <item>Selecione sua idade</item>
         <item>04 anos</item>
         <item>05 anos</item>
         <item>06 anos</item>

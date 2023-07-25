@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/planotl"
+    android:background="@drawable/planocadlog4"
     tools:context=".TelaPrincipal">
 
     <TextView
@@ -26,6 +26,7 @@
         android:id="@+id/btnCadastro"
         android:layout_width="191dp"
         android:layout_height="65dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:onClick="cadastrar"
         android:text="@string/Cadastro"
         android:textColor="#25211D"
@@ -39,6 +40,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="191dp"
         android:layout_height="65dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:onClick="logar"
         android:text="@string/Login"
         android:textColor="#25211D"
@@ -46,6 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.208" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,6 +30,8 @@ public class Cadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
+        setContentView(R.layout.activity_cadastro);
+        getSupportActionBar().hide();
         edtNome = findViewById(R.id.edtNome);
         edtApelido = findViewById(R.id.edtApelido);
         Idade = findViewById(R.id.spinner);
