@@ -23,6 +23,8 @@ public class TelaPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telaprincipal);
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_telaprincipal);
         btnCadastro = findViewById(R.id.btnCadastro);
         btnLogin = findViewById(R.id.btnLogin);
         dao = new Dao(this);
