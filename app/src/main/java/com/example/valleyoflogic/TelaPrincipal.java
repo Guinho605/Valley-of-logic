@@ -28,10 +28,14 @@ public class TelaPrincipal extends AppCompatActivity {
         dao = new Dao(this);
     }
 
-    public void cadastro(View view){
+    public void cadastrar(View view){
         Intent intent = new Intent(getApplicationContext(), Cadastro.class);
         startActivity(intent);
+    }
 
+    public void logar(View view){
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        startActivity(intent);
     }
 
 
