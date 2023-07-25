@@ -26,7 +26,9 @@ public class Dao {
     {
         ContentValues values = new ContentValues();
         values.put("nome", usuario.getNome());
+        values.put("Apelido", usuario.getApelido());
         values.put("idade", usuario.getIdade());
+
 
         return (banco.insert("aluno",null,values));
     }

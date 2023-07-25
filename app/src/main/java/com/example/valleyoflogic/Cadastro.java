@@ -2,13 +2,65 @@ package com.example.valleyoflogic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.example.valleyoflogic.dao.Dao;
+import com.example.valleyoflogic.model.Usuario;
+import com.example.valleyoflogic.utill.ConnectionFactory;
+
+import java.sql.SQLException;
 
 public class Cadastro extends AppCompatActivity {
+    public EditText edtNome, edtApelido;
+    public Spinner Idade;
 
+    private Dao dao;
+
+    private Usuario usuario;
+
+    String[] opcoes = {"04 anos","05 anos", "06 anos", "07 anos", "08 anos", "09 anos", "+10 anos"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
+        edtNome = findViewById(R.id.edtNome);
+        edtApelido = findViewById(R.id.edtApelido);
+        Idade = findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_spinner_dropdown_item, opcoes);
+        Idade.setAdapter(adapter);
+        Idade.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
-}
+
+    public void salvar(View view) throws SQLException {
+        Usuario a = new Usuario();
+        a.setNome(edtNome.getText().toString());
+        a.setApelido(edtApelido.getText().toString());
+        String selectedAgeString = Idade.getSelectedItem().toString();
+        int selectedAge = Integer.parseInt(selectedAgeString.replace(" anos", ""));
+        a.setIdade(selectedAge);
+        dao = new Dao(this);
+        long id = dao.salvar(a);
+        Toast.makeText(getApplicationContext(), "Cadastro realizado com sucesso ", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(getApplicationContext(), Selecao.class);
+        startActivity(intent);
+    }
+
+
+    }
