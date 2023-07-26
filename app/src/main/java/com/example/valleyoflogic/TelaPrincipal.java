@@ -14,7 +14,7 @@ import com.example.valleyoflogic.model.Usuario;
 public class TelaPrincipal extends AppCompatActivity {
 
     public EditText edtNome, edtIdade;
-    public Button btnCadastro, btnLogin;
+    public Button btnCadastro, btnLogin, btnPop;
 
     private Dao dao;
     private Usuario usuario;
@@ -27,6 +27,7 @@ public class TelaPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_telaprincipal);
         btnCadastro = findViewById(R.id.btnCadastro);
         btnLogin = findViewById(R.id.btnLogin);
+        btnPop = findViewById(R.id.btnPop);
         dao = new Dao(this);
     }
 
@@ -40,7 +41,8 @@ public class TelaPrincipal extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
-
+    public void pop(View view){
+        Intent intent = new Intent(getApplicationContext(), Popup.class);
+        startActivity(intent);
+    }
 }

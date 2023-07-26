@@ -12,6 +12,9 @@
         android:theme="@style/Theme.ValleyOfLogic"
         tools:targetApi="31">
         <activity
+            android:name=".Popup"
+            android:exported="false" />
+        <activity
             android:name=".Selecao"
             android:exported="false" />
         <activity
