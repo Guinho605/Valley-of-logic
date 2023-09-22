@@ -1,22 +1,13 @@
 package com.example.valleyoflogic.model;
-
-public class Usuario {
+public class Usuario{
 
     private Integer id;
     private String nome;
-
     private String apelido;
     private Integer idade;
 
-
     public Usuario() {
-        this.id = id;
-        this.nome = nome;
-        this.idade = idade;
-        this.apelido = apelido;
-    }
-
-    public Usuario(String string, int anInt) {
+        // Construtor padrão vazio
     }
 
     public Integer getId() {
@@ -35,18 +26,27 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public String getApelido() {
+        return apelido;
     }
-    public int getIdade() {
-        return idade;
-    }
-    public String getIdadeString() {
-        return String.valueOf(idade);
-    }
-    public String getApelido(){return apelido;}
 
     public void setApelido(String apelido) {
         this.apelido = apelido;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", apelido='" + apelido + '\'' +
+                ", idade=" + idade +
+                '}';
     }
 }

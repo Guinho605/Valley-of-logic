@@ -20,7 +20,6 @@ import java.sql.SQLException;
 public class Cadastro extends AppCompatActivity {
     public EditText edtNome, edtApelido;
     public Spinner Idade;
-
     private Dao dao;
 
     private Usuario usuario;
@@ -59,9 +58,18 @@ public class Cadastro extends AppCompatActivity {
         a.setIdade(selectedAge);
         dao = new Dao(this);
         long id = dao.salvar(a);
-        Toast.makeText(getApplicationContext(), "Cadastro realizado com sucesso ", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(getApplicationContext(), Selecao.class);
-        startActivity(intent);
+        if (id != -1) {
+            // O usuário foi inserido com sucesso, faça algo aqui
+            Toast.makeText(getApplicationContext(), "Usuário inserido com sucesso, ID: " + id, Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(getApplicationContext(), Selecao.class);
+            startActivity(intent);
+        } else {
+            // Ocorreu um erro ao inserir o usuário
+            Toast.makeText(getApplicationContext(), "Erro ao inserir o usuário", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(getApplicationContext(), Cadastro.class);
+            startActivity(intent);
+        }
+
     }
 
 
