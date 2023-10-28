@@ -4,51 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/planocadlog5"
+    android:background="@drawable/login"
     tools:context=".TelaPrincipal">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Valley of Logic"
-        android:textColor="#25211D"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
 
     <Button
         android:id="@+id/btnCadastro"
         android:layout_width="191dp"
         android:layout_height="65dp"
+        android:background="#025A2A"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="cadastrar"
         android:text="@string/Cadastro"
         android:textColor="#25211D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="191dp"
         android:layout_height="65dp"
+        android:background="#025A2A"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="logar"
         android:text="@string/Login"
         android:textColor="#25211D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
 
     <Button
         android:id="@+id/btnPop"
@@ -65,5 +54,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCadastro"
         app:layout_constraintVertical_bias="0.769" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="342dp"
+        android:layout_height="268dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888"
+        app:srcCompat="@drawable/monstroverde" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
