@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.View;
 import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,10 +18,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Esconder a barra de navegação e a barra de status
+        hideSystemUI();
+        // Esconder a titlebar
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
         prog();
+
+        // Configurar um listener para ocultar novamente as barras de navegação e de status
+        View decorView = getWindow().getDecorView();
+        decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+            @Override
+            public void onSystemUiVisibilityChange(int visibility) {
+                if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
+                    // As barras de navegação e de status foram expostas novamente,
+                    // portanto, oculte-as novamente.
+                    hideSystemUI();
+                }
+            }
+        });
+
+    }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
     }
 
     public void prog() {

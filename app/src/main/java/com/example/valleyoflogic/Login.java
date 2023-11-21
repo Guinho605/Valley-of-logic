@@ -22,6 +22,9 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Esconder a barra de navegação e a barra de status
+        hideSystemUI();
+        // Esconder a titlebar
         setContentView(R.layout.activity_login);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
@@ -30,7 +33,27 @@ public class Login extends AppCompatActivity {
         btnLogar = findViewById(R.id.btnLogar);
         dao = new Dao(this);
 
+        // Configurar um listener para ocultar novamente as barras de navegação e de status
+        View decorView = getWindow().getDecorView();
+        decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+            @Override
+            public void onSystemUiVisibilityChange(int visibility) {
+                if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
+                    // As barras de navegação e de status foram expostas novamente,
+                    // portanto, oculte-as novamente.
+                    hideSystemUI();
+                }
+            }
+        });
+
     }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
+
     public void realizarLogin(View view) {
         String nome = edtNome.getText().toString();
         String apelido = edtApelido.getText().toString();
