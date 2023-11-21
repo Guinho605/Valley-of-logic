@@ -14,12 +14,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ProgressbarV">
+    <style name="pbLoad">
         <item name="colorSecondary">#a7d66c</item>
-    </style>
-
-    <style name="Progressbar">
-        <item name="colorSecondary">#1C1C1C</item>
     </style>
 
 </resources>
