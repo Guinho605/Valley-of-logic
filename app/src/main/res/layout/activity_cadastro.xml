@@ -7,6 +7,22 @@
     android:background="@drawable/login"
     tools:context=".Cadastro">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="735dp"
+        android:layout_height="28dp"
+        android:background="#50b849"
+        android:fontFamily="@font/fontejogo"
+        android:text=" Realize seu cadastro"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <EditText
         android:id="@+id/edtNome"
         android:layout_width="wrap_content"
@@ -63,12 +79,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginBottom="76dp"
-        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/fontejogo"
         android:onClick="salvar"
         android:text="@string/btnCadastrar"
-        android:textColor="#25211D"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
