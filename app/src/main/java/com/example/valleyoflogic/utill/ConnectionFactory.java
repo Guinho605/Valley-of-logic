@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class ConnectionFactory extends SQLiteOpenHelper {
-//teszte
+//tesztet
 
     private static final String NAME = "banco";
     private static final int VERSION = 3;
