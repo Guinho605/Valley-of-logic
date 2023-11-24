@@ -2,8 +2,11 @@ package com.example.valleyoflogic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,7 +28,8 @@ public class Cadastro extends AppCompatActivity {
 
     private Usuario usuario;
 
-    String[] opcoes = {"04 anos","05 anos", "06 anos", "07 anos", "08 anos", "09 anos", "+10 anos"};
+    String[] opcoes = {"04 anos", "05 anos", "06 anos", "07 anos", "08 anos", "09 anos", "+10 anos"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +42,7 @@ public class Cadastro extends AppCompatActivity {
         edtNome = findViewById(R.id.edtNome);
         edtApelido = findViewById(R.id.edtApelido);
         Idade = findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_spinner_dropdown_item, opcoes);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, opcoes);
         Idade.setAdapter(adapter);
         Idade.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -83,28 +87,62 @@ public class Cadastro extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-    public void salvar(View view) throws SQLException {
-        Usuario a = new Usuario();
-        a.setNome(edtNome.getText().toString());
-        a.setApelido(edtApelido.getText().toString());
-        String selectedAgeString = Idade.getSelectedItem().toString();
-        int selectedAge = Integer.parseInt(selectedAgeString.replace(" anos", ""));
-        a.setIdade(selectedAge);
-        dao = new Dao(this);
-        long id = dao.salvar(a);
-        if (id != -1) {
-            // O usuário foi inserido com sucesso, faça algo aqui
-            Toast.makeText(getApplicationContext(), "Usuário inserido com sucesso, ID: " + id, Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(getApplicationContext(), Selecao.class);
-            startActivity(intent);
-        } else {
-            // Ocorreu um erro ao inserir o usuário
-            Toast.makeText(getApplicationContext(), "Erro ao inserir o usuário", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(getApplicationContext(), Cadastro.class);
-            startActivity(intent);
+    public void salvar(View view) {
+        String nome = edtNome.getText().toString().trim();
+        String apelido = edtApelido.getText().toString().trim();
+        String selectedAgeString = Idade.getSelectedItem().toString().trim();
+
+        // Verifica se algum campo obrigatório está vazio
+        if (nome.isEmpty() || apelido.isEmpty() || selectedAgeString.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Preencha todos os campos", Toast.LENGTH_LONG).show();
+            return; // Interrompe a execução do método se algum campo estiver vazio
         }
 
-    }
+        // Restante do código...
+
+        try {
+            int selectedAge = Integer.parseInt(selectedAgeString.replace(" anos", ""));
+
+            SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("nome", nome);
+            editor.putString("apelido", apelido);
+            editor.putInt("idade", selectedAge);
+            editor.apply();
+
+            Usuario novoUsuario = new Usuario();
+            novoUsuario.setNome(nome);
+            novoUsuario.setApelido(apelido);
+            novoUsuario.setIdade(selectedAge);
+
+            dao = new Dao(this);
+            long id = dao.salvar(novoUsuario);
+
+            if (id != -1) {
+                Toast.makeText(getApplicationContext(), "Usuário inserido com sucesso, ID: " + id, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), Selecao.class);
+                startActivity(intent);
+            } else {
+                Toast.makeText(getApplicationContext(), "Erro ao inserir o usuário", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), Cadastro.class);
+                startActivity(intent);
+            }
+
+            // Logs para verificar os valores inseridos
+            Log.d("DEBUG", "Nome: " + novoUsuario.getNome());
+            Log.d("DEBUG", "Apelido: " + novoUsuario.getApelido());
+            Log.d("DEBUG", "Idade: " + novoUsuario.getIdade());
+
+            Log.d("DEBUG", "Usuário salvo no banco de dados");
+
+        } catch (NumberFormatException e) {
+            // Se ocorrer um erro ao converter a idade para inteiro
+            Toast.makeText(getApplicationContext(), "Formato de idade inválido", Toast.LENGTH_LONG).show();
+        }
 
 
     }
+
+}
+
+

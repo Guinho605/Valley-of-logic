@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.valleyoflogic.dao.Dao;
+import com.example.valleyoflogic.model.Usuario;
 
 public class Login extends AppCompatActivity {
 
@@ -19,6 +21,8 @@ public class Login extends AppCompatActivity {
     public Button btnLogar;
 
     private Dao dao;
+
+    private LoginManager loginManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,7 @@ public class Login extends AppCompatActivity {
         edtApelido = findViewById(R.id.edtApelido2);
         btnLogar = findViewById(R.id.btnLogar);
         dao = new Dao(this);
+        loginManager = new LoginManager(this);
 
         // Configurar um listener para ocultar novamente as barras de navegação e de status
         View decorView = getWindow().getDecorView();
@@ -83,11 +88,14 @@ public class Login extends AppCompatActivity {
         if (credenciaisValidas) {
             // Credenciais válidas, permitir o acesso à próxima tela
             Toast.makeText(this, "Login realizado com sucesso", Toast.LENGTH_SHORT).show();
+            loginManager.setLoggedIn(true);
             Intent intent = new Intent(this, Selecao.class);
             startActivity(intent);
+            finish();
         } else {
             // Credenciais inválidas, exibir mensagem de erro
             Toast.makeText(this, "Credenciais inválidas, tente novamente", Toast.LENGTH_SHORT).show();
         }
+
     }
 }

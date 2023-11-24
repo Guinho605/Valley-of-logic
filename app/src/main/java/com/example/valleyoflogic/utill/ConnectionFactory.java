@@ -10,17 +10,20 @@ public class ConnectionFactory extends SQLiteOpenHelper {
 
 
     private static final String NAME = "banco";
-    private static final int VERSION = 2;
+    private static final int VERSION = 3;
     public static final String TABLE_USUARIOS = "usuarios";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_NOME = "nome";
     public static final String COLUMN_APELIDO = "apelido";
+    public static final String COLUMN_IDADE = "idade";
 
     private static final String TABLE_CREATE =
             "CREATE TABLE " + TABLE_USUARIOS + " (" +
                     COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     COLUMN_NOME + " TEXT, " +
-                    COLUMN_APELIDO + " TEXT);";
+                    COLUMN_APELIDO + " TEXT, " +
+                    COLUMN_IDADE + " INTEGER);";
+
     public ConnectionFactory(@Nullable Context context) {
         super(context, NAME, null, VERSION);
     }

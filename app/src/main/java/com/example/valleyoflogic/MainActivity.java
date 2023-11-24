@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private int counter = 0;
     private Handler handler = new Handler(Looper.getMainLooper());
 
+    private LoginManager loginManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +26,13 @@ public class MainActivity extends AppCompatActivity {
         // Esconder a titlebar
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+        loginManager = new LoginManager(this);
 
-        prog();
+        if (loginManager.isLoggedIn()) {
+            abrirSelecao();
+        } else {
+            prog(); // Inicie o progresso apenas se não estiver logado
+        }
 
         // Configurar um listener para ocultar novamente as barras de navegação e de status
         View decorView = getWindow().getDecorView();
@@ -48,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 
     private void hideSystemUI() {
@@ -59,13 +65,19 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-    public void prog() {
+    private void prog() {
         pbLoad = findViewById(R.id.pbLoad);
 
         // Execute a tarefa de carregamento
         new Thread(new Runnable() {
             @Override
             public void run() {
+                // Verificar se o usuário está logado antes de começar o carregamento
+                if (loginManager.isLoggedIn()) {
+                    abrirSelecao();
+                    return;
+                }
+
                 while (counter < 100) {
                     counter++;
 
@@ -84,11 +96,15 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-                // Após o carregamento, inicie a TelaPrincipal
-                handler.post(new Runnable() {
+                // Verificar o login após o carregamento
+                runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        abrirTelaPrincipal();
+                        if (loginManager.isLoggedIn()) {
+                            abrirSelecao();
+                        } else {
+                            abrirTelaPrincipal();
+                        }
                     }
                 });
             }
@@ -96,11 +112,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void abrirTelaPrincipal() {
-        // Use uma intenção para iniciar a TelaPrincipal
+        // Use uma intenção para iniciar a Tela de Login
         Intent intent = new Intent(this, TelaPrincipal.class);
         startActivity(intent);
+        finish();
+    }
 
-        // Finalize a atividade atual (MainActivity) se desejar
+    private void abrirSelecao() {
+        // Use uma intenção para iniciar a Tela de Seleção
+        Intent intent = new Intent(this, Selecao.class);
+        startActivity(intent);
         finish();
     }
 }

@@ -16,4 +16,5 @@
         <item>10+ anos</item>
     </string-array>
     <string name="btnCadastrar"> Cadastrar</string>
+    <string name="btnLogout"> Sair</string>
 </resources>

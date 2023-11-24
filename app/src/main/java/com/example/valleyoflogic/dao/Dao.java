@@ -21,10 +21,12 @@ public class Dao {
         ContentValues values = new ContentValues();
         values.put("nome", usuario.getNome());
         values.put("apelido", usuario.getApelido());
+        values.put("idade", usuario.getIdade()); // Correção para acessar a idade do usuário
         long id = banco.insert(ConnectionFactory.TABLE_USUARIOS, null, values);
         banco.close();
         return id;
     }
+
     public boolean verificarCredenciais(String nome, String apelido) {
         SQLiteDatabase bd = conexao.getReadableDatabase();
 
