@@ -98,7 +98,7 @@ public class Cadastro extends AppCompatActivity {
             return; // Interrompe a execução do método se algum campo estiver vazio
         }
 
-        // Restante do código...
+        // Restante do código...rrtrt
 
         try {
             int selectedAge = Integer.parseInt(selectedAgeString.replace(" anos", ""));
