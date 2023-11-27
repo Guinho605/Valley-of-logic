@@ -9,19 +9,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="735dp"
-        android:layout_height="28dp"
-        android:background="#50b849"
+        android:layout_width="834dp"
+        android:layout_height="44dp"
+        android:background="#0050B849"
         android:fontFamily="@font/fontejogo"
-        android:text=" Realize seu cadastro"
+        android:text=" Realize seu cadastro:"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/edtNome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.038"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.533" />
 
     <EditText
         android:id="@+id/edtNome"

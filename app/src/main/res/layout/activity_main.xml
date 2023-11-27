@@ -10,12 +10,27 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="361dp"
+        android:layout_height="154dp"
+        android:fontFamily="@font/fontejogo"
+        android:text="Valley Of Logic"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/pbLoad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
     <ProgressBar
         android:id="@+id/pbLoad"
         android:theme="@style/pbLoad"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="241dp"
-        android:layout_height="25dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
