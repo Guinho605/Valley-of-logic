@@ -68,6 +68,7 @@
     {"name":"spr_player_out","order":7,"path":"sprites/spr_player_out/spr_player_out.yy",},
     {"name":"spr_inimigo_vetor_dead","order":3,"path":"sprites/spr_inimigo_vetor_dead/spr_inimigo_vetor_dead.yy",},
     {"name":"rm_fase02","order":7,"path":"rooms/rm_fase02/rm_fase02.yy",},
+    {"name":"Sprite31","order":8,"path":"sprites/Sprite31/Sprite31.yy",},
     {"name":"obj_inimigo_vetor","order":2,"path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},
     {"name":"spr_player_fall","order":4,"path":"sprites/spr_player_fall/spr_player_fall.yy",},
     {"name":"obj_game_control","order":6,"path":"objects/obj_game_control/obj_game_control.yy",},
