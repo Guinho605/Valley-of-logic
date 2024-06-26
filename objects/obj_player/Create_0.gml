@@ -11,7 +11,9 @@ vel_jump = 6;
 
 pulos_extra = 1;
 
-// Evento Create do obj_player
+
+global.answeredIncorrectly = false;
+
 
 // Inicialize as variáveis necessárias
 shoot_cooldown = 0;
@@ -31,7 +33,7 @@ dash_cooldown_timer = 0; // Temporizador de recarga do dash
 
 alive = true; // Ou false, dependendo da lógica do seu jogo
 dano = false;
-tempo_dano = room_speed * 0.5;
+tempo_dano = room_speed * 1;
 timer_dano = 0;
 
 tempo_reinicia = room_speed * 2;
@@ -173,6 +175,7 @@ estado_normal = function() {
     } else {
         image_alpha = 1;
     }
+	
 
     // Lógica de colisão com inimigo durante o dash
     if (dash) {

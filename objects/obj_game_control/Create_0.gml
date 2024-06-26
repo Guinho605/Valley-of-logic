@@ -1,43 +1,22 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-//método de desenhar o coiração
+//método de desenhar o coração
 desenha_coracao = function(_x, _y)
 {
-	draw_sprite_ext(spr_coracao, 2 * get_timer() / 1000000, _x, _y, 2, 2, 0, c_white, 1);	
+    draw_sprite_ext(spr_coracao, 2 * get_timer() / 1000000, _x, _y, 2, 2, 0, c_white, 1);    
 }
 
-// Evento Create de obj_game_control
-global.selectedAnswer = "";
-global.correctAnswer = "A"; // Esta variável será definida pela pergunta atual
-global.bossLife = 5; // Exemplo de vida do boss
-global.playerLife = 3; // Exemplo de vida do jogador
-
-global.chooseQuestion = function() {
-    var question = irandom(1); // Gera um número aleatório entre 0 e 1
-    switch (question) {
-        case 0:
-            global.questionText = "Qual é o resultado de 2 + 2?";
-            global.correctAnswer = "B"; // Assumindo que B é 4
-            break;
-        case 1:
-            global.questionText = "Qual é a capital da França?";
-            global.correctAnswer = "A"; // Assumindo que A é Paris
-            break;
-        // Adicione mais perguntas aqui
-    }
-};
-
-// Chame a função global para definir a pergunta inicial
-global.chooseQuestion();
-
-
-
-
-
-
-
-
-
-
-
+// Evento Create de obj_gameController
+global.selectedAnswer = ""; // Inicialize como uma string vazia
+global.vida = 3; // Exemplo de inicialização de outras variáveis globais
+global.boss_vida = 3; // Exemplo de inicialização da vida do chefe
+// Inicialize as perguntas e as respostas corretas
+global.questions = [
+    "Se você tem o vetor A = [1, 2] e o vetor B = [3, 4], qual é a soma dos vetores A + B?", 
+    "Se você tem o vetor C = [5, 6] e subtrai o vetor D = [2, 1], qual é o resultado da subtração C - D?", 
+    "Qual é a capital da Itália?"
+];
+global.correctAnswers = ["A", "A", "B"]; // Supondo que "A" é a resposta correta para a França e a Itália, e "B" para a Alemanha
+global.currentQuestionIndex = 0; // Índice da pergunta atual
+global.currentQuestion = global.questions[global.currentQuestionIndex]; // Pergunta atual

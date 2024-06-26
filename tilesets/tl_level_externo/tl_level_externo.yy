@@ -115,8 +115,8 @@
     "path": "folders/Conjuntos de tiles.yy",
   },
   "spriteId": {
-    "name": "spr_level_externo",
-    "path": "sprites/spr_level_externo/spr_level_externo.yy",
+    "name": "spr_level_externo1",
+    "path": "sprites/spr_level_externo1/spr_level_externo1.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

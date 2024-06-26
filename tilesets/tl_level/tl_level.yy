@@ -164,8 +164,8 @@
     "path": "folders/Conjuntos de tiles.yy",
   },
   "spriteId": {
-    "name": "spr_level",
-    "path": "sprites/spr_level/spr_level.yy",
+    "name": "spr_level1",
+    "path": "sprites/spr_level1/spr_level1.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

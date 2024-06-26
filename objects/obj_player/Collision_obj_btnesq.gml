@@ -1,7 +1,5 @@
-// Evento de Colisão com o Jogador
+// Evento de Colisão com o Jogador para o Botão A
 if (place_meeting(x, y, obj_player)) {
     global.selectedAnswer = "A";
-    isPressed = true;
-    show_debug_message("Botão A pressionado");
-    // Adicione qualquer feedback visual ou sonoro aqui
+    // Adicione feedback visual/sonoro para a seleção da resposta
 }

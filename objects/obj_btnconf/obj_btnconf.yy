@@ -28,7 +28,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_btn_normal",
     "path": "sprites/spr_btn_normal/spr_btn_normal.yy",

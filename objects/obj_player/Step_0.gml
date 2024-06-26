@@ -35,23 +35,38 @@ switch(estado) {
         }
         break;
 
-    case "dead":
-        mudando_sprite(spr_player_dead);
-        timer_reinicia--;
-        if (timer_reinicia <= 0) {
-            global.vida = global.max_vida;
-			velh = 0;
-			vel = 0;
-            room_restart();    
-        }
-        // Ficando visível
-        if (image_alpha < 1) {
-            image_alpha += 0.01;    
-        }
-        if(image_index > image_number - 1) {
-            image_speed = 0;
-            image_index = image_number - 1;}
-        break;
+
+// Dentro do seu switch case
+case "dead":
+    mudando_sprite(spr_player_dead);
+    timer_reinicia--;
+
+    // Reinicializar as vidas quando o timer de reinício chegar a zero
+    if (timer_reinicia <= 0) {
+        global.vida = global.max_vida; // Reinicializar vidas
+        velh = 0; // Parar movimento horizontal
+        velv = 0; // Zerar a velocidade vertical para começar a queda
+        y += 1; // Mova um pixel para forçar o jogador a sair do chão (opcional)
+        estado = "normal"; // Ou outro estado inicial desejado após reiniciar
+        room_restart(); // Reiniciar a sala
+    } else {
+        // Aplicar gravidade para que o jogador caia
+        velv += grav;
+        y += velv; // Atualizar a posição vertical do jogador com base na velocidade vertical
+    }
+
+    // Ficar visível gradualmente
+    if (image_alpha < 1) {
+        image_alpha += 0.01;
+    }
+
+    // Parar animação quando chegar ao fim
+    if (image_index > image_number - 1) {
+        image_speed = 0;
+        image_index = image_number - 1;
+    }
+    break;
+
 }
 
 
@@ -111,3 +126,11 @@ if (shoot_cooldown > 0) {
 }
 
 #endregion
+
+// Evento Step de obj_player
+
+if (room == rm_boss && x >= 700) { // Verifique se o jogador está na sala do chefe e atingiu a posição x >= 350
+    global.playerAtPoint = true;
+}
+
+
