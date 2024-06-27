@@ -125,6 +125,7 @@
     {"name":"spr_tocha","order":5,"path":"sprites/spr_tocha/spr_tocha.yy",},
     {"name":"spr_tochaAzul","order":9,"path":"sprites/spr_tochaAzul/spr_tochaAzul.yy",},
     {"name":"spr_wall_move","order":4,"path":"sprites/spr_wall_move/spr_wall_move.yy",},
+    {"name":"tl_level_externo_2","order":2,"path":"tilesets/tl_level_externo_2/tl_level_externo_2.yy",},
     {"name":"tl_level_externo","order":1,"path":"tilesets/tl_level_externo/tl_level_externo.yy",},
   ],
 }

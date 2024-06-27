@@ -155,6 +155,7 @@
     {"id":{"name":"spr_tocha","path":"sprites/spr_tocha/spr_tocha.yy",},},
     {"id":{"name":"spr_tochaAzul","path":"sprites/spr_tochaAzul/spr_tochaAzul.yy",},},
     {"id":{"name":"spr_wall_move","path":"sprites/spr_wall_move/spr_wall_move.yy",},},
+    {"id":{"name":"tl_level_externo_2","path":"tilesets/tl_level_externo_2/tl_level_externo_2.yy",},},
     {"id":{"name":"tl_level_externo","path":"tilesets/tl_level_externo/tl_level_externo.yy",},},
     {"id":{"name":"tl_level","path":"tilesets/tl_level/tl_level.yy",},},
   ],
