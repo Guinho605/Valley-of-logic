@@ -15,7 +15,7 @@ for (var i=0; i < op_max; i++)
 	draw_set_valign(fa_middle);
 	if(index == i)
 	{
-		draw_set_color(c_red);
+		draw_set_color(#FE502D);
 	}else{
 		draw_set_color(c_black);
 	}

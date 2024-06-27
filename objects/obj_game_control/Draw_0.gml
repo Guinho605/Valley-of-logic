@@ -1,4 +1,4 @@
-// Ajuste o brilho do jogo
+ /*// Ajuste o brilho do jogo
 draw_set_alpha(global.brilho);
 
 // Desenha o resto do jogo aqui. Exemplo:

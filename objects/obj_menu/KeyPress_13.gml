@@ -4,7 +4,7 @@
     {
         case 0: // Novo Jogo
             // Coloque aqui o código para iniciar um novo jogo
-            room_goto(rm_tutorial01); // Exemplo de mudar para a sala do jogo
+            room_goto(rm_video); // Exemplo de mudar para a sala do jogo
             break;
         case 1: // Carregar Jogo
             scr_load_game();
