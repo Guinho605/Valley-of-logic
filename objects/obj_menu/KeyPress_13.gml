@@ -11,6 +11,7 @@
             break;
         case 2: // Opções
             // Coloque aqui o código para abrir o menu de opções
+			room_goto(rm_opcoes);
             break;
         case 3: // Sair
             game_end();

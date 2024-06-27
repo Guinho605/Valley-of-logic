@@ -21,3 +21,9 @@ global.correctAnswers = ["A", "A", "B"]; // Supondo que "A" é a resposta corret
 global.currentQuestionIndex = 0; // Índice da pergunta atual
 global.currentQuestion = global.questions[global.currentQuestionIndex]; // Pergunta atual
 global.all_questions_answered = false;
+
+// No create event do obj_game_control
+global.volume_som = 1;    // Valor inicial de volume de som (0 a 1)
+global.volume_musica = 1; // Valor inicial de volume de música (0 a 1)
+global.brilho = 0.80;        // Valor inicial de brilho (0 a 1)
+
