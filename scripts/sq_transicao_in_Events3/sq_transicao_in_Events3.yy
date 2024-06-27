@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "sq_transicao_in_Events3",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Valley of logic",
-    "path": "Valley of logic.yyp",
+  "$GMScript":"",
+  "%Name":"sq_transicao_in_Events3",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sq_transicao_in_Events3",
+  "parent":{
+    "name":"Valley of logic",
+    "path":"Valley of logic.yyp",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

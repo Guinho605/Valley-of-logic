@@ -3,11 +3,11 @@
 draw_set_font(ft_menu);
 
 
-var dist = 55;
+var dist = 60;
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();
 var x1 = gui_largura / 2;
-var y1 = gui_altura / 2 - ((op_max - 1) * dist / 2);
+var y1 = gui_altura / 1.9 - ((op_max - 1) * dist / 2);
 
 for (var i=0; i < op_max; i++)
 {
@@ -17,7 +17,7 @@ for (var i=0; i < op_max; i++)
 	{
 		draw_set_color(c_red);
 	}else{
-		draw_set_color(c_white);
+		draw_set_color(c_black);
 	}
 	
 	 draw_text(x1, y1 + (dist * i), opcoes[i]);
