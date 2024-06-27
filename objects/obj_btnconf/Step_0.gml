@@ -1,21 +1,24 @@
-if (place_meeting(x, y, obj_player) && global.selectedAnswer != "") {
+if (place_meeting(x, y, obj_player) && global.selectedAnswer != "" && global.currentQuestionIndex < array_length(global.correctAnswers)) {
+    show_debug_message("Colisão com jogador e resposta selecionada não vazia.");
     if (global.selectedAnswer == global.correctAnswers[global.currentQuestionIndex]) {
+        show_debug_message("Resposta correta!");
         // Lógica para resposta correta
         global.boss_vida -= 1; // Diminui a vida do chefão
+        show_debug_message("Vida do chefe: " + string(global.boss_vida));
 
         // Mudar a sprite do chefe para a de hit (exemplo)
         with (obj_boss_vetor) {
             sprite_index = spr_boss_vetor_hit;
             hit_timer = room_speed * 0.5; // 0.5 segundos para mostrar a sprite de hit
         }
-        
+
         // Avance para a próxima pergunta
         global.currentQuestionIndex += 1;
         if (global.currentQuestionIndex < array_length(global.questions)) {
             global.currentQuestion = global.questions[global.currentQuestionIndex];
         } else {
             global.currentQuestion = "Parabéns! Você respondeu todas as perguntas.";
-            // Aqui você pode finalizar o jogo, mostrar uma tela de vitória, etc.
+            global.all_questions_answered = true;
         }
 
         // Incrementar respostas corretas no obj_boss_vetor
@@ -23,10 +26,12 @@ if (place_meeting(x, y, obj_player) && global.selectedAnswer != "") {
             respostas_corretas += 1;
         }
     } else {
+        show_debug_message("Resposta incorreta.");
         // Lógica para resposta incorreta
-        if (!obj_btnconf.answeredIncorrectly) {
+        if (!answeredIncorrectly) {
             global.vida -= 1 - 1; // Diminui a vida do jogador
-            obj_btnconf.answeredIncorrectly = true; // Marca que já respondeu incorretamente
+            show_debug_message("Vida do jogador: " + string(global.vida));
+            answeredIncorrectly = true; // Marca que já respondeu incorretamente
 
             // Atualiza a sprite do jogador para a sprite de dano (exemplo)
             with (obj_player) {
@@ -42,7 +47,14 @@ if (place_meeting(x, y, obj_player) && global.selectedAnswer != "") {
     global.selectedAnswer = ""; // Limpa a resposta selecionada para evitar que seja confirmada novamente sem uma nova seleção
 }
 
-// Limpa obj_btnconf.answeredIncorrectly após processar a resposta
+// Limpa answeredIncorrectly após processar a resposta
 if (global.selectedAnswer == "") {
-    obj_btnconf.answeredIncorrectly = false;
+    answeredIncorrectly = false;
+}
+
+// Verifique se todas as perguntas foram respondidas
+if (global.all_questions_answered) {
+    with (obj_btnconf) {
+        instance_destroy();
+    }
 }

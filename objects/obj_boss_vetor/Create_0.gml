@@ -3,9 +3,14 @@
 
 // Evento Create do obj_boss
 global.boss_vida = 3; // Defina a quantidade de vida do chefe
+global.boss_alive = true;
 global.currentQuestionIndex = 0; // Índice da pergunta atual
-global.questions = ["Pergunta 1", "Pergunta 2", "Pergunta 3"]; // Array de perguntas
-global.correctAnswers = ["A", "B", "C"]; // Array de respostas corretas correspondentes
+global.questions = [
+    "Se você tem o vetor A = [1, 2] e o vetor B = [3, 4], qual é a soma dos vetores A + B?", 
+    "Se você tem o vetor C = [5, 6] e subtrai o vetor D = [2, 1], qual é o resultado da subtração C - D?", 
+    "Qual é a capital da Itália?"
+];
+global.correctAnswers = ["A", "A", "B"]; // As respostas corretas correspondentes às perguntas
 global.currentQuestion = global.questions[global.currentQuestionIndex]; // Pergunta atual
 
 /// Evento Create do obj_boss_vetor

@@ -21,6 +21,13 @@ if (target != noone && instance_exists(target)) {
     }
 }
 
+/// Step Event do obj_missil
+
+// Verifica colisão com o chão
+if (place_meeting(x, y, obj_chao)) {
+    instance_destroy(); // Destroi o míssil se colidir com o chão
+}
+
 // Verificar se o míssil sai da tela e destruí-lo
 if (x < 0 || x > room_width || y < 0 || y > room_height) {
     instance_destroy();
@@ -37,5 +44,3 @@ if (speed != 0) {
     }
 }
 
-// Adicionar no Step Event do obj_missil
-show_debug_message("Missil X: " + string(x) + " Y: " + string(y) + " | Target X: " + string(target.x) + " Y: " + string(target.y));
