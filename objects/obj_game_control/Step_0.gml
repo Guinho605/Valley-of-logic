@@ -1,5 +1,5 @@
 
-audio_master_gain(global.volume_som);
+/*audio_master_gain(global.volume_som);
 audio_sound_gain(sd_loop7, global.volume_musica, 0);
 
 /*

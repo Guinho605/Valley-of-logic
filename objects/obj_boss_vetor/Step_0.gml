@@ -52,7 +52,7 @@ if (global.boss_vida > 0) { // Verifica se o boss ainda está vivo antes de disp
             
             if (missil != noone) {
                 missil.target = obj_player;
-                missil.speed = 3;
+                missil.speed = 4;
                 // Restante do código para configurar o míssil, se necessário
             } else {
                 show_debug_message("Erro: Não foi possível criar o míssil!");
