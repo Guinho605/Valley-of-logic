@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"",
-  "%Name":"tl_level",
+  "%Name":"tl_level_interno",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         40,46,45,30,26,55,49,51,27,29,54,52,48,33,32,35,39,105,86,108,21,83,84,89,41,87,106,90,59,103,102,109,
@@ -10,16 +10,13 @@
         154,160,159,144,140,169,163,165,141,143,168,166,162,147,146,149,153,219,200,222,135,197,198,203,155,
         201,220,204,173,217,216,223,157,211,134,206,136,207,174,226,172,225,138,210,176,212,214,
       ],},
-    {"$GMAutoTileSet":"","%Name":"autotile_3","closed_edge":false,"name":"autotile_3","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
-        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-      ],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tl_level",
+  "name":"tl_level_interno",
   "out_columns":16,
   "out_tilehborder":2,
   "out_tilevborder":2,

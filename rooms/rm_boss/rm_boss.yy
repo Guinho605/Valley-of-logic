@@ -95,11 +95,8 @@
           41,0,-2147483648,-5,0,-2,-2147483648,2,20,46,-4,40,1,41,-4,0,-5,-2147483648,-7,0,-3,-2147483648,-2,0,
           1,-2147483648,-3,0,2,39,41,-8,0,2,20,46,-5,40,1,41,-3,0,-3,-2147483648,-19,0,2,39,41,-6,0,3,20,21,46,
           -6,40,1,41,-25,0,2,39,41,-5,0,2,20,46,-8,40,1,41,-25,0,2,39,45,-5,21,1,46,-9,40,1,45,-25,21,1,46,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_level","path":"tilesets/tl_level/tl_level.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Fundo","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Fundo","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":11,"SerialiseWidth":43,"TileCompressedData":[
-          -27,219,-16,154,1,219,-42,154,1,219,-42,154,1,219,-42,154,1,219,-42,154,1,214,-42,154,1,219,-42,154,
-          1,219,-42,154,1,219,-42,154,1,219,-42,154,-3,219,-40,154,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_level","path":"tilesets/tl_level/tl_level.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_level_externo_3","path":"tilesets/tl_level_externo_3/tl_level_externo_3.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Fundo","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Fundo","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":11,"SerialiseWidth":43,"TileCompressedData":[-27,219,-403,154,-3,219,-40,154,],"TileDataFormat":1,},"tilesetId":{"name":"tl_level_externo_3","path":"tilesets/tl_level_externo_3/tl_level_externo_3.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_boss",
