@@ -10,7 +10,7 @@ global.max_vida = 3;
 global.vida = global.max_vida;
 
 
-
+audio_play_sound(sd_loop7, 3, true); 
 
 function mudando_sprite(_sprite)
 {

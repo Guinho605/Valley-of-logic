@@ -39,6 +39,9 @@ switch(estado) {
 // Dentro do seu switch case
 case "dead":
     mudando_sprite(spr_player_dead);
+	//instance_create_layer(x,y,layer, obj_player);
+	//var som = choose(sd_deadPlayer);
+	//audio_play_sound(som, 2, false);
     timer_reinicia--;
 
     // Reinicializar as vidas quando o timer de reinício chegar a zero

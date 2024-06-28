@@ -39,6 +39,7 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"CutScene.mp4","CopyToMask":-1,"filePath":"datafiles","name":"CutScene.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"CutScene1.mp4","CopyToMask":-1,"filePath":"datafiles","name":"CutScene1.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"CutScene2.mp4","CopyToMask":-1,"filePath":"datafiles","name":"CutScene2.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -127,6 +128,10 @@
     {"id":{"name":"sq_transicao_out_Events2","path":"scripts/sq_transicao_out_Events2/sq_transicao_out_Events2.yy",},},
     {"id":{"name":"sq_transicao_in","path":"sequences/sq_transicao_in/sq_transicao_in.yy",},},
     {"id":{"name":"sq_transicao_out","path":"sequences/sq_transicao_out/sq_transicao_out.yy",},},
+    {"id":{"name":"sd_8bit","path":"sounds/sd_8bit/sd_8bit.yy",},},
+    {"id":{"name":"sd_chiptune","path":"sounds/sd_chiptune/sd_chiptune.yy",},},
+    {"id":{"name":"sd_deadPlayer","path":"sounds/sd_deadPlayer/sd_deadPlayer.yy",},},
+    {"id":{"name":"sd_loop7","path":"sounds/sd_loop7/sd_loop7.yy",},},
     {"id":{"name":"spr_armadura","path":"sprites/spr_armadura/spr_armadura.yy",},},
     {"id":{"name":"spr_arvore1","path":"sprites/spr_arvore1/spr_arvore1.yy",},},
     {"id":{"name":"spr_arvore2","path":"sprites/spr_arvore2/spr_arvore2.yy",},},
