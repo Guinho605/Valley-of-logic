@@ -18,6 +18,7 @@ switch(estado) {
 
         // Terminou a animação, para ela
         var _img_vel = sprite_get_speed(sprite_index) / room_speed;
+		//obj_SND.sfx_walk.play = true;
         // Indo para o estado normal
         if(image_index >= image_number - _img_vel) {
             image_speed = 0;

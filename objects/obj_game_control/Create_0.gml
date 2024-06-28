@@ -27,4 +27,4 @@ global.volume_som = 1;    // Valor inicial de volume de som (0 a 1)
 global.volume_musica = 1; // Valor inicial de volume de música (0 a 1)
 global.brilho = 0.80;        // Valor inicial de brilho (0 a 1)
 
-inicia_som = false; 
+//inicia_som = false; 

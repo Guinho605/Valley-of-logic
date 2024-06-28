@@ -94,11 +94,13 @@ estado_normal = function() {
 	            if (_jump) {
 	                velv = -vel_jump;    
 	                pulos_extra = 1;
+					obj_SND.sfx_jump.play = true;
 	            }
             // Movendo no chão
             if (velh != 0) {
                 sprite_index = spr_player_run;
                 image_xscale = sign(velh);
+				obj_SND.sfx_walk.play = true;
             } else {
                 sprite_index = spr_player_idle;
             }
@@ -145,11 +147,13 @@ estado_normal = function() {
         if (posso_perder_vida) {
             global.vida--;
             if (global.vida <= 0) {
-                estado = "dead";    
+                estado = "dead";  
+				
             } else {
                 posso_perder_vida = false;
             }
         }
+		obj_SND.sfx_dano.play = true;
     }
 
     // Lógica de estado morto
@@ -158,6 +162,8 @@ estado_normal = function() {
             velv = 3;
             velv += grav;
         }
+		obj_SND.sfx_dead.play = true;
+		
     }
 
     // Se o timer do dano é maior que zero, eu diminuo ele
@@ -197,3 +203,4 @@ estado_normal = function() {
 
 // Chamar a função de estado normal (exemplo)
 estado_normal();
+//obj_SND.sfx_walk.play = true;

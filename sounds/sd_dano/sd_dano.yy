@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sd_loop7",
+  "%Name":"sd_dano",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":42.36,
-  "name":"sd_loop7",
+  "duration":0.444062,
+  "name":"sd_dano",
   "parent":{
     "name":"Sons",
     "path":"folders/Sons.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sd_loop7.mp3",
+  "soundFile":"sd_dano.mp3",
   "type":0,
-  "volume":0.11,
+  "volume":1.0,
 }
