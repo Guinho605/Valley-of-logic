@@ -50,6 +50,7 @@
   "resources":[
     {"id":{"name":"ft_cutscene","path":"fonts/ft_cutscene/ft_cutscene.yy",},},
     {"id":{"name":"ft_default","path":"fonts/ft_default/ft_default.yy",},},
+    {"id":{"name":"ft_dialogo","path":"fonts/ft_dialogo/ft_dialogo.yy",},},
     {"id":{"name":"ft_menu","path":"fonts/ft_menu/ft_menu.yy",},},
     {"id":{"name":"obj_armadura","path":"objects/obj_armadura/obj_armadura.yy",},},
     {"id":{"name":"obj_arvore1","path":"objects/obj_arvore1/obj_arvore1.yy",},},
@@ -66,6 +67,7 @@
     {"id":{"name":"obj_btnesq","path":"objects/obj_btnesq/obj_btnesq.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
+    {"id":{"name":"obj_dialogo","path":"objects/obj_dialogo/obj_dialogo.yy",},},
     {"id":{"name":"obj_dino1","path":"objects/obj_dino1/obj_dino1.yy",},},
     {"id":{"name":"obj_dino2","path":"objects/obj_dino2/obj_dino2.yy",},},
     {"id":{"name":"obj_end","path":"objects/obj_end/obj_end.yy",},},
@@ -81,6 +83,7 @@
     {"id":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_missil","path":"objects/obj_missil/obj_missil.yy",},},
+    {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_parede_movel_vert","path":"objects/obj_parede_movel_vert/obj_parede_movel_vert.yy",},},
     {"id":{"name":"obj_parede_movel","path":"objects/obj_parede_movel/obj_parede_movel.yy",},},
     {"id":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},},

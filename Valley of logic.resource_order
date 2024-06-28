@@ -28,6 +28,7 @@
   "ResourceOrderSettings":[
     {"name":"ft_cutscene","order":2,"path":"fonts/ft_cutscene/ft_cutscene.yy",},
     {"name":"ft_default","order":1,"path":"fonts/ft_default/ft_default.yy",},
+    {"name":"ft_dialogo","order":3,"path":"fonts/ft_dialogo/ft_dialogo.yy",},
     {"name":"obj_armadura","order":27,"path":"objects/obj_armadura/obj_armadura.yy",},
     {"name":"obj_arvore1","order":33,"path":"objects/obj_arvore1/obj_arvore1.yy",},
     {"name":"obj_arvore2","order":37,"path":"objects/obj_arvore2/obj_arvore2.yy",},
@@ -43,6 +44,7 @@
     {"name":"obj_btnesq","order":18,"path":"objects/obj_btnesq/obj_btnesq.yy",},
     {"name":"obj_camera","order":69,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
+    {"name":"obj_dialogo","order":71,"path":"objects/obj_dialogo/obj_dialogo.yy",},
     {"name":"obj_dino1","order":60,"path":"objects/obj_dino1/obj_dino1.yy",},
     {"name":"obj_dino2","order":61,"path":"objects/obj_dino2/obj_dino2.yy",},
     {"name":"obj_end","order":68,"path":"objects/obj_end/obj_end.yy",},
@@ -58,6 +60,7 @@
     {"name":"obj_inimigo_vetor","order":2,"path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},
     {"name":"obj_menu","order":13,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"obj_missil","order":21,"path":"objects/obj_missil/obj_missil.yy",},
+    {"name":"obj_npc","order":70,"path":"objects/obj_npc/obj_npc.yy",},
     {"name":"obj_parede_movel_vert","order":10,"path":"objects/obj_parede_movel_vert/obj_parede_movel_vert.yy",},
     {"name":"obj_parede_movel","order":9,"path":"objects/obj_parede_movel/obj_parede_movel.yy",},
     {"name":"obj_placa","order":25,"path":"objects/obj_placa/obj_placa.yy",},
