@@ -9,7 +9,6 @@
     {"name":"inst_7348A4EF_1_3","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_58389C2D_3","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_308096BA_3","path":"rooms/rm_fase6/rm_fase6.yy",},
-    {"name":"inst_5C70E5BE_3","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_4FB5CA63_3","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_4EF3AA02","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_6C56472D","path":"rooms/rm_fase6/rm_fase6.yy",},
@@ -17,9 +16,7 @@
     {"name":"inst_651D7B52","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_98F8A94","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_1839A2BC","path":"rooms/rm_fase6/rm_fase6.yy",},
-    {"name":"inst_28B7C819","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_70A6E839","path":"rooms/rm_fase6/rm_fase6.yy",},
-    {"name":"inst_74092A8D","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_4E00FAA8","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_32D19827","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_2EFC3B8A","path":"rooms/rm_fase6/rm_fase6.yy",},
@@ -36,6 +33,9 @@
     {"name":"inst_6E1D233B","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_51B4832F","path":"rooms/rm_fase6/rm_fase6.yy",},
     {"name":"inst_1CB8DFAD","path":"rooms/rm_fase6/rm_fase6.yy",},
+    {"name":"inst_EC3DB4","path":"rooms/rm_fase6/rm_fase6.yy",},
+    {"name":"inst_A1A388F","path":"rooms/rm_fase6/rm_fase6.yy",},
+    {"name":"inst_744A9B8C","path":"rooms/rm_fase6/rm_fase6.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -53,11 +53,11 @@
     {"$GMRInstanceLayer":"","%Name":"Inimigos","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_58389C2D_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58389C2D_3","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":224.0,},
         {"$GMRInstance":"","%Name":"inst_308096BA_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_308096BA_3","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":192.0,},
-        {"$GMRInstance":"","%Name":"inst_5C70E5BE_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5C70E5BE_3","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":128.0,},
-        {"$GMRInstance":"","%Name":"inst_28B7C819","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28B7C819","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":256.0,},
         {"$GMRInstance":"","%Name":"inst_70A6E839","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70A6E839","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":320.0,},
-        {"$GMRInstance":"","%Name":"inst_74092A8D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_74092A8D","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":320.0,},
         {"$GMRInstance":"","%Name":"inst_1CB8DFAD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CB8DFAD","objectId":{"name":"obj_inimigo_vetor","path":"objects/obj_inimigo_vetor/obj_inimigo_vetor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_EC3DB4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EC3DB4","objectId":{"name":"obj_inimigo_fantasma","path":"objects/obj_inimigo_fantasma/obj_inimigo_fantasma.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_A1A388F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A1A388F","objectId":{"name":"obj_inimigo_fantasma","path":"objects/obj_inimigo_fantasma/obj_inimigo_fantasma.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":256.0,},
+        {"$GMRInstance":"","%Name":"inst_744A9B8C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_744A9B8C","objectId":{"name":"obj_inimigo_fantasma","path":"objects/obj_inimigo_fantasma/obj_inimigo_fantasma.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":128.0,},
       ],"layers":[],"name":"Inimigos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Colisores","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_4EF3AA02","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EF3AA02","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"properties":[

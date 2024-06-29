@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_circulo",
-    "path":"sprites/spr_circulo/spr_circulo.yy",
+    "name":"spr_npc",
+    "path":"sprites/spr_npc/spr_npc.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -9,11 +9,7 @@
         case 1: // Carregar Jogo
             scr_load_game();
             break;
-        case 2: // Opções
-            // Coloque aqui o código para abrir o menu de opções
-			room_goto(rm_opcoes);
-            break;
-        case 3: // Sair
+        case 2: // Sair
             game_end();
             break;
     }

@@ -3,7 +3,7 @@
 
 if (morto) 
 {
-	sprite_index = spr_inimigo_vetor_dead;
+	sprite_index = spr_inimigo_fantasma_dead;
 	//sumindo se acabou a animação
 	if (image_speed <= 0)
 	{
@@ -88,7 +88,7 @@ else
 //checando o dano
 if (dano && morto == false)
 {
-	sprite_index = spr_inimigo_vetor_dano;	
+	sprite_index = spr_inimigo_fantasma_dano;	
 	velh = 0;
 }
 	

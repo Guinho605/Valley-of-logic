@@ -94,13 +94,13 @@ estado_normal = function() {
 	            if (_jump) {
 	                velv = -vel_jump;    
 	                pulos_extra = 1;
-					obj_SND.sfx_jump.play = true;
+					//obj_SND.sfx_jump.play = true;
 	            }
             // Movendo no chão
             if (velh != 0) {
                 sprite_index = spr_player_run;
                 image_xscale = sign(velh);
-				obj_SND.sfx_walk.play = true;
+				//obj_SND.sfx_walk.play = true;
             } else {
                 sprite_index = spr_player_idle;
             }
@@ -153,7 +153,7 @@ estado_normal = function() {
                 posso_perder_vida = false;
             }
         }
-		obj_SND.sfx_dano.play = true;
+		//obj_SND.sfx_dano.play = true;
     }
 
     // Lógica de estado morto
@@ -162,7 +162,7 @@ estado_normal = function() {
             velv = 3;
             velv += grav;
         }
-		obj_SND.sfx_dead.play = true;
+		//obj_SND.sfx_dead.play = true;
 		
     }
 
