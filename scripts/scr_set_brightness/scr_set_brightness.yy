@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_set_brightness",
   "isCompatibility":false,
   "isDnD":false,

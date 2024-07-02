@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_draw_text_ext_break",
   "isCompatibility":false,
   "isDnD":false,

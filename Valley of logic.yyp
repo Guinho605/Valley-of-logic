@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.0.157",
   },
   "name":"Valley of logic",
   "resources":[
@@ -67,6 +67,7 @@
     {"id":{"name":"obj_btnesq","path":"objects/obj_btnesq/obj_btnesq.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
+    {"id":{"name":"obj_chao2","path":"objects/obj_chao2/obj_chao2.yy",},},
     {"id":{"name":"obj_dialogo","path":"objects/obj_dialogo/obj_dialogo.yy",},},
     {"id":{"name":"obj_dino1","path":"objects/obj_dino1/obj_dino1.yy",},},
     {"id":{"name":"obj_dino2","path":"objects/obj_dino2/obj_dino2.yy",},},
@@ -176,6 +177,7 @@
     {"id":{"name":"spr_btn_pressed","path":"sprites/spr_btn_pressed/spr_btn_pressed.yy",},},
     {"id":{"name":"spr_btn_voltar","path":"sprites/spr_btn_voltar/spr_btn_voltar.yy",},},
     {"id":{"name":"spr_chao","path":"sprites/spr_chao/spr_chao.yy",},},
+    {"id":{"name":"spr_chao2","path":"sprites/spr_chao2/spr_chao2.yy",},},
     {"id":{"name":"spr_circulo","path":"sprites/spr_circulo/spr_circulo.yy",},},
     {"id":{"name":"spr_coracao","path":"sprites/spr_coracao/spr_coracao.yy",},},
     {"id":{"name":"spr_dino1","path":"sprites/spr_dino1/spr_dino1.yy",},},

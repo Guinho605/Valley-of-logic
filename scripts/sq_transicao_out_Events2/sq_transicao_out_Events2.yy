@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"sq_transicao_out_Events2",
   "isCompatibility":false,
   "isDnD":false,
