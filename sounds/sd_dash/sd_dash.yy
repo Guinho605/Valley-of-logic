@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sd_deadPlayer",
+  "%Name":"sd_dash",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.213062,
-  "name":"sd_deadPlayer",
+  "duration":1.201625,
+  "name":"sd_dash",
   "parent":{
     "name":"Sons",
     "path":"folders/Sons.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sd_deadPlayer.mp3",
+  "soundFile":"sd_dash.mp3",
   "type":0,
-  "volume":0.0,
+  "volume":0.1,
 }

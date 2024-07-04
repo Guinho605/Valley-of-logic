@@ -78,6 +78,7 @@ estado_normal = function() {
     if (dash) {
         velh = image_xscale * dash_speed; // Define a velocidade horizontal do dash
         sprite_index = spr_player_dash; // Muda para a sprite de dash durante o dash
+		obj_SND.sfx_dash.play = true;
         dash_timer--;
         if (dash_timer <= 0) {
             dash = false;
@@ -94,13 +95,13 @@ estado_normal = function() {
 	            if (_jump) {
 	                velv = -vel_jump;    
 	                pulos_extra = 1;
-					//obj_SND.sfx_jump.play = true;
+					obj_SND.sfx_jump.play = true;
 	            }
             // Movendo no chão
             if (velh != 0) {
                 sprite_index = spr_player_run;
                 image_xscale = sign(velh);
-				//obj_SND.sfx_walk.play = true;
+				obj_SND.sfx_walk.play = true;
             } else {
                 sprite_index = spr_player_idle;
             }
@@ -148,12 +149,11 @@ estado_normal = function() {
             global.vida--;
             if (global.vida <= 0) {
                 estado = "dead";  
-				
+				obj_SND.sfx_dead.play = true;
             } else {
                 posso_perder_vida = false;
             }
         }
-		//obj_SND.sfx_dano.play = true;
     }
 
     // Lógica de estado morto
@@ -161,8 +161,9 @@ estado_normal = function() {
         if (!_chao) {
             velv = 3;
             velv += grav;
+			obj_SND.sfx_dead.play = true;
         }
-		//obj_SND.sfx_dead.play = true;
+		
 		
     }
 
@@ -172,6 +173,7 @@ estado_normal = function() {
     } else {
         dano = false;
         posso_perder_vida = true;
+		//obj_SND.sfx_dead.play = true;
     }
 
     // Lógica de invulnerabilidade
@@ -196,7 +198,9 @@ estado_normal = function() {
             if (!_inimigo.morto && !_inimigo.dano) {
                 dano = true;
                 timer_dano = tempo_dano;
-                inv_timer = inv_tempo;}}}
+                inv_timer = inv_tempo;
+				obj_SND.sfx_dano.play = true;}}}
+				
     // Reduzir o temporizador de recarga do dash
     if (dash_cooldown_timer > 0) {
         dash_cooldown_timer--;}};

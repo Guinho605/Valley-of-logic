@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"Valley of logic",
   "resources":[
@@ -90,6 +90,7 @@
     {"id":{"name":"obj_npc4","path":"objects/obj_npc4/obj_npc4.yy",},},
     {"id":{"name":"obj_npc5","path":"objects/obj_npc5/obj_npc5.yy",},},
     {"id":{"name":"obj_npc6","path":"objects/obj_npc6/obj_npc6.yy",},},
+    {"id":{"name":"obj_npc7","path":"objects/obj_npc7/obj_npc7.yy",},},
     {"id":{"name":"obj_parede_movel_vert","path":"objects/obj_parede_movel_vert/obj_parede_movel_vert.yy",},},
     {"id":{"name":"obj_parede_movel","path":"objects/obj_parede_movel/obj_parede_movel.yy",},},
     {"id":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},},
@@ -158,8 +159,8 @@
     {"id":{"name":"sd_8bit","path":"sounds/sd_8bit/sd_8bit.yy",},},
     {"id":{"name":"sd_chiptune","path":"sounds/sd_chiptune/sd_chiptune.yy",},},
     {"id":{"name":"sd_dano","path":"sounds/sd_dano/sd_dano.yy",},},
+    {"id":{"name":"sd_dash","path":"sounds/sd_dash/sd_dash.yy",},},
     {"id":{"name":"sd_dead","path":"sounds/sd_dead/sd_dead.yy",},},
-    {"id":{"name":"sd_deadPlayer","path":"sounds/sd_deadPlayer/sd_deadPlayer.yy",},},
     {"id":{"name":"sd_jump","path":"sounds/sd_jump/sd_jump.yy",},},
     {"id":{"name":"sd_loop7","path":"sounds/sd_loop7/sd_loop7.yy",},},
     {"id":{"name":"sd_walk","path":"sounds/sd_walk/sd_walk.yy",},},
